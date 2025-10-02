@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoSteel AI | Industrial-Grade Steel Optimization</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- 3D Background -->
+    <div id="three-container"></div>
+
+    <!-- Animated Background Elements -->
+    <div class="floating-elements">
+        <div class="floating-element el-1"></div>
+        <div class="floating-element el-2"></div>
+        <div class="floating-element el-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-industry"></i>
+                </div>
+                <span>EcoSteel<span class="ai-text">AI</span></span>
+            </div>
+
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#simulation" class="nav-link">AI Simulation</a>
+                <a href="#blockchain" class="nav-link">Blockchain</a>
+                <a href="#impact" class="nav-link">Impact</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="btn-outline">Demo</button>
+                <button class="btn-primary">Get Started</button>
+            </div>
+
+            <div class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>AI-Powered Steel Optimization</span>
+                </div>
+
+                <h1 class="hero-title">
+                    Revolutionizing
+                    <span class="gradient-text">Steel Production</span>
+                    with Advanced AI
+                </h1>
+
+                <p class="hero-description">
+                    Reduce emissions by 45%, increase efficiency by 30%, and ensure complete supply chain transparency
+                    with our cutting-edge AI and blockchain platform.
+                </p>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-value">45%</div>
+                        <div class="stat-label">Emission Reduction</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">30%</div>
+                        <div class="stat-label">Cost Savings</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">99.9%</div>
+                        <div class="stat-label">Traceability</div>
+                    </div>
+                </div>
+
+                <div class="hero-actions">
+                    <button class="btn-hero-primary" onclick="scrollToSection('simulation')">
+                        <i class="fas fa-play"></i>
+                        Run AI Simulation
+                    </button>
+                    <button class="btn-hero-secondary">
+                        <i class="fas fa-chart-line"></i>
+                        View Case Study
+                    </button>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="floating-card card-1">
+                    <i class="fas fa-robot"></i>
+                    <h4>AI Optimization</h4>
+                    <p>Real-time process optimization</p>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fas fa-link"></i>
+                    <h4>Blockchain</h4>
+                    <p>Immutable supply chain</p>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fas fa-chart-bar"></i>
+                    <h4>Analytics</h4>
+                    <p>Live performance metrics</p>
+                </div>
+
+                <!-- 3D Visualization Container -->
+                <div class="factory-visualization">
+                    <div class="factory-tower"></div>
+                    <div class="factory-pipe"></div>
+                    <div class="factory-smoke"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Simulation Section -->
+    <section id="simulation" class="simulation-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>AI-Powered Simulation</h2>
+                <p>Optimize your steel production with real-time AI analysis</p>
+            </div>
+
+            <div class="simulation-grid">
+                <div class="simulation-controls glass-card">
+                    <h3>Simulation Parameters</h3>
+
+                    <div class="param-group">
+                        <label>Steel Plant</label>
+                        <select class="glass-select">
+                            <option>Tata Steel Jamshedpur</option>
+                            <option>JSW Steel Dolvi</option>
+                            <option>SAIL Bokaro</option>
+                            <option>ArcelorMittal Poland</option>
+                        </select>
+                    </div>
+
+                    <div class="param-group">
+                        <label>Scrap Quality: <span id="scrap-value">78%</span></label>
+                        <input type="range" class="param-slider" min="50" max="95" value="78">
+                    </div>
+
+                    <div class="param-group">
+                        <label>Production Scale</label>
+                        <div class="scale-buttons">
+                            <button class="scale-btn active">Small</button>
+                            <button class="scale-btn">Medium</button>
+                            <button class="scale-btn">Large</button>
+                        </div>
+                    </div>
+
+                    <div class="param-group">
+                        <label>Energy Mix</label>
+                        <div class="energy-mix">
+                            <div class="energy-source">
+                                <span>Coal</span>
+                                <div class="energy-bar">
+                                    <div class="energy-fill coal" style="width: 40%"></div>
+                                </div>
+                                <span>40%</span>
+                            </div>
+                            <div class="energy-source">
+                                <span>Natural Gas</span>
+                                <div class="energy-bar">
+                                    <div class="energy-fill gas" style="width: 35%"></div>
+                                </div>
+                                <span>35%</span>
+                            </div>
+                            <div class="energy-source">
+                                <span>Renewable</span>
+                                <div class="energy-bar">
+                                    <div class="energy-fill renewable" style="width: 25%"></div>
+                                </div>
+                                <span>25%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="simulate-btn" id="run-simulation">
+                        <i class="fas fa-brain"></i>
+                        Run AI Simulation
+                    </button>
+                </div>
+
+                <div class="simulation-results glass-card">
+                    <div class="results-header">
+                        <h3>Optimization Results</h3>
+                        <div class="result-badge">
+                            <i class="fas fa-check"></i>
+                            AI Recommended
+                        </div>
+                    </div>
+
+                    <div class="results-comparison">
+                        <div class="comparison-item before">
+                            <h4>Before AI</h4>
+                            <div class="metric">
+                                <span class="metric-value">850</span>
+                                <span class="metric-unit">tons CO₂</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">1.2M</span>
+                                <span class="metric-unit">kWh</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">$4.8M</span>
+                                <span class="metric-unit">cost</span>
+                            </div>
+                        </div>
+
+                        <div class="comparison-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+
+                        <div class="comparison-item after">
+                            <h4>After AI</h4>
+                            <div class="metric">
+                                <span class="metric-value">467</span>
+                                <span class="metric-unit">tons CO₂</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">840K</span>
+                                <span class="metric-unit">kWh</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">$3.1M</span>
+                                <span class="metric-unit">cost</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="results-chart">
+                        <canvas id="simulation-chart"></canvas>
+                    </div>
+
+                    <div class="savings-summary">
+                        <div class="saving-item">
+                            <i class="fas fa-cloud"></i>
+                            <div>
+                                <div class="saving-value">-45%</div>
+                                <div class="saving-label">Emissions</div>
+                            </div>
+                        </div>
+                        <div class="saving-item">
+                            <i class="fas fa-bolt"></i>
+                            <div>
+                                <div class="saving-value">-30%</div>
+                                <div class="saving-label">Energy</div>
+                            </div>
+                        </div>
+                        <div class="saving-item">
+                            <i class="fas fa-dollar-sign"></i>
+                            <div>
+                                <div class="saving-value">$1.7M</div>
+                                <div class="saving-label">Saved</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blockchain Section -->
+    <section id="blockchain" class="blockchain-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Blockchain Traceability</h2>
+                <p>End-to-end supply chain transparency</p>
+            </div>
+
+            <div class="blockchain-visual">
+                <div class="blockchain-chain">
+                    <div class="chain-node active">
+                        <div class="node-icon">
+                            <i class="fas fa-mountain"></i>
+                        </div>
+                        <div class="node-content">
+                            <h4>Raw Material Sourcing</h4>
+                            <p>Iron ore verified from certified mines</p>
+                            <span class="node-time">2024-01-15 08:30</span>
+                        </div>
+                    </div>
+
+                    <div class="chain-node active">
+                        <div class="node-icon">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <div class="node-content">
+                            <h4>Primary Production</h4>
+                            <p>Blast furnace process completed</p>
+                            <span class="node-time">2024-01-15 14:20</span>
+                        </div>
+                    </div>
+
+                    <div class="chain-node">
+                        <div class="node-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <div class="node-content">
+                            <h4>Quality Testing</h4>
+                            <p>Material composition analysis</p>
+                            <span class="node-time">Pending</span>
+                        </div>
+                    </div>
+
+                    <div class="chain-node">
+                        <div class="node-icon">
+                            <i class="fas fa-hammer"></i>
+                        </div>
+                        <div class="node-content">
+                            <h4>Final Production</h4>
+                            <p>Steel forming and finishing</p>
+                            <span class="node-time">Pending</span>
+                        </div>
+                    </div>
+
+                    <div class="chain-node">
+                        <div class="node-icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <div class="node-content">
+                            <h4>Delivery</h4>
+                            <p>Shipment to end customer</p>
+                            <span class="node-time">Pending</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="impact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Environmental Impact</h2>
+                <p>Real-time monitoring and analytics</p>
+            </div>
+
+            <div class="impact-grid">
+                <div class="impact-card glass-card">
+                    <div class="impact-header">
+                        <i class="fas fa-cloud"></i>
+                        <h3>CO₂ Reduction</h3>
+                    </div>
+                    <div class="impact-value">12,450</div>
+                    <div class="impact-unit">tons saved</div>
+                    <div class="impact-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 78%"></div>
+                        </div>
+                        <span>78% of target</span>
+                    </div>
+                </div>
+
+                <div class="impact-card glass-card">
+                    <div class="impact-header">
+                        <i class="fas fa-bolt"></i>
+                        <h3>Energy Efficiency</h3>
+                    </div>
+                    <div class="impact-value">8.2M</div>
+                    <div class="impact-unit">kWh saved</div>
+                    <div class="impact-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 65%"></div>
+                        </div>
+                        <span>65% of target</span>
+                    </div>
+                </div>
+
+                <div class="impact-card glass-card">
+                    <div class="impact-header">
+                        <i class="fas fa-recycle"></i>
+                        <h3>Material Recovery</h3>
+                    </div>
+                    <div class="impact-value">94%</div>
+                    <div class="impact-unit">efficiency</div>
+                    <div class="impact-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 94%"></div>
+                        </div>
+                        <span>Industry leading</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="impact-chart-container glass-card">
+                <div class="chart-header">
+                    <h3>Annual Performance Metrics</h3>
+                    <div class="chart-legend">
+                        <div class="legend-item">
+                            <div class="legend-color emissions"></div>
+                            <span>CO₂ Emissions</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color energy"></div>
+                            <span>Energy Use</span>
+                        </div>
+                    </div>
+                </div>
+                <canvas id="impact-chart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Ready to Transform Your Steel Production?</h2>
+                    <p>Contact us for a personalized demo and see how EcoSteel AI can revolutionize your operations.</p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>contact@ecosteelei.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Office</h4>
+                                <p>IIT Bombay Research Park</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form glass-card">
+                    <h3>Send us a Message</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Email Address</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="company" required>
+                            <label for="company">Company</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="4" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <span>EcoSteel<span class="ai-text">AI</span></span>
+                    <p>Revolutionizing steel production through AI and blockchain technology.</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <a href="#">Features</a>
+                        <a href="#">Simulation</a>
+                        <a href="#">Blockchain</a>
+                        <a href="#">Analytics</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="#">About</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Partners</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <a href="#">Privacy</a>
+                        <a href="#">Terms</a>
+                        <a href="#">Security</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 EcoSteel AI. Built for IIT Bombay ECell Hackathon.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/threejs-scene.js"></script>
+    <script src="js/simulation.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

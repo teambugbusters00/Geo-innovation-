@@ -1,0 +1,21 @@
+/* Three.js Background Styles */
+#threejs-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+/* Ensure content is above Three.js canvas */
+.hero,
+.features,
+.simulation,
+.blockchain,
+.impact,
+.contact {
+    position: relative;
+    z-index: 1;
+}
