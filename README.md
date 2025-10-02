@@ -5,7 +5,8 @@
 ![EcoSteel AI](https://img.shields.io/badge/EcoSteel-AI%20Powered-blue?style=for-the-badge&logo=ai)
 ![React](https://img.shields.io/badge/React-18.2.0-61dafb?style=for-the-badge&logo=react)
 ![Tailwind](https://img.shields.io/badge/Tailwind-CSS-38b2ac?style=for-the-badge&logo=tailwind-css)
-![IIT Bombay](https://img.shields.io/badge/IIT%20Bombay-ECell%20Hackathon-red?style=for-the-badge&logo=graduation-cap)
+![IIT Bombay](https://img.shields.io/badge/IIT%20Bombay-ECell%20Hackathon-red?style=for-the-badge&logo=graduation-cap)![EcoSteel AI](
+eags-aayush.github.io/GeoInnovation/)
 
 **AI-Powered Steel Manufacturing Optimization with Blockchain Traceability**
 
