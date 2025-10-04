@@ -1,5 +1,5 @@
 # 🚀 EcoSteel AI - Smart Steel Manufacturing Platform
-
+live link    https://eags-aayush.github.io/GeoInnovation/
 <div align="center">
 
 ![EcoSteel AI](https://img.shields.io/badge/EcoSteel-AI%20Powered-blue?style=for-the-badge&logo=ai)
